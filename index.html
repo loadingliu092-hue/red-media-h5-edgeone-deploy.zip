@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>红色媒体传播史</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="phone" aria-label="红色媒体传播史 H5">
+      <section class="screen screen-home" id="home">
+        <div class="home-art" aria-hidden="true">
+          <img src="assets/images/title.png" alt="">
+        </div>
+        <header class="home-copy">
+          <p>党的新闻传播事业在上海的足迹</p>
+          <h1>红色媒体传播史</h1>
+          <button class="sound-pill" type="button" data-audio="assets/audio/01.m4a">
+            <span class="speaker" aria-hidden="true"></span>
+            <span>点击播放导览</span>
+          </button>
+        </header>
+        <nav class="period-list" aria-label="选择历史时期"></nav>
+      </section>
+
+      <section class="screen screen-period" id="period" hidden>
+        <div class="period-tools">
+          <button class="back-button" type="button">查看其它时期</button>
+          <button class="sound-mini" type="button" aria-label="播放当前时期第一段音频"></button>
+        </div>
+        <article class="period-hero"></article>
+        <div class="timeline-wrap">
+          <div class="timeline"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="detail-sheet" hidden>
+      <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+        <button class="sheet-close" type="button" aria-label="关闭"></button>
+        <div class="sheet-media"></div>
+        <p class="sheet-date"></p>
+        <h2 id="sheet-title"></h2>
+        <p class="sheet-body"></p>
+        <button class="sheet-play" type="button">
+          <span class="speaker" aria-hidden="true"></span>
+          <span>点击播放音频</span>
+        </button>
+        <audio controls preload="none"></audio>
+        <div class="sheet-detail-pages" aria-label="图文详情"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
